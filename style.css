@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.sub-title,
+.number-questions,
+#preview {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+
+.info div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.question-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  font-weight: 600;
+}
+
+.question-info form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-info form div {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  gap: 10px;
+}
+
+.question-info form #separation {
+  text-align: right;
+  width: 300px;
+}

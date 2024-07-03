@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulas Matemáticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <h1 class="title">Fórmulas de Matemática</h1>
+            <div>
+                <h3 class="sub-title">Questões acertadas:</h3>
+                <h3 class="number-questions">0</h3>
+            </div>
+        </div>
+
+        <div class="question-info">
+            <h1 class="title" id="question">Área do Retângulo</h1>
+            <form id="form">
+                <div>
+                    <select name="first-part" id="first-part">
+                        <option value="?">?</option>
+                        <option value="A">A</option>
+                        <option value="V">V</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="H">H</option>
+                    </select>
+
+                    <h3> = </h3>
+
+                    <select name="second-part" id="second-part">
+                        <option value="?">?</option>
+                        <option value="b">b</option>
+                        <option value="h">h</option>
+                        <option value="pi">π</option>
+                        <option value="r">r</option>
+                        <option value="r2">r²</option>
+                        <option value="l2">l²</option>
+                    </select>
+
+                    <select name="first-operator" id="first-operator">
+                        <option value="?">?</option>
+                        <option value="x">x</option>
+                        <option value="/">/</option>
+                        <option value="-">-</option>
+                        <option value="+">+</option>
+                    </select>
+
+                    <select name="second-part" id="third-part">
+                        <option value="?">?</option>
+                        <option value="b">b</option>
+                        <option value="h">h</option>
+                        <option value="pi">π</option>
+                        <option value="r">r</option>
+                        <option value="r2">r²</option>
+                        <option value="l2">l²</option>
+                    </select>
+
+                    <select name="second-operator" id="second-operator">
+                        <option value="?">?</option>
+                        <option value="x">x</option>
+                        <option value="/">/</option>
+                        <option value="-">-</option>
+                        <option value="+">+</option>
+                    </select>
+
+                    <select name="third-part" id="fourth-part">
+                        <option value="?">?</option>
+                        <option value="b">b</option>
+                        <option value="h">h</option>
+                        <option value="pi">π</option>
+                        <option value="r">r</option>
+                        <option value="r2">r²</option>
+                        <option value="l2">l²</option>
+                    </select>
+                </div>
+
+                <h3 id="separation">=======================</h3>
+
+                <div>
+                    <select name="fourth-part" id="fifth-part">
+                        <option value="?">?</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button type="button" onclick="submitForm()" class="submit-button" id="submit-button">
+                    Confirmar
+                </button>
+            </form>
+            <p id="preview"></p>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
