@@ -36,7 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
   font-weight: 600;
 }
 
@@ -60,4 +59,24 @@ body {
 
 .image {
   max-width: 600px;
+}
+
+.fraction {
+  display: inline-block;
+  text-align: center;
+  vertical-align: end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fraction .numerator {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.fraction .denominator {
+  padding-top: 5px;
+  font-size: 1.2em;
+  color: #ff0000;
 }

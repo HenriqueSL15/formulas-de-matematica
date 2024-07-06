@@ -62,6 +62,7 @@ const questions = [
 ];
 
 const image = document.getElementById('image');
+const preview = document.getElementById('preview');
 
 let questionNumber = getRandomInt(0, questions.length);
 // questionNumber = 4;
@@ -84,6 +85,7 @@ function verifyValues(array, typeOfQuestion) {
     questionNumber = getRandomInt(0, questions.length);
     question.innerText = questions[questionNumber].question;
     image.setAttribute('src', `${questions[questionNumber].img}`);
+    document.querySelector('.number-questions').innerText = points;
     points++;
     clearInputs();
     return true;
@@ -119,12 +121,34 @@ function submitForm() {
   const operator1 = document.getElementById('first-operator').value;
   const operator2 = document.getElementById('second-operator').value;
 
-  const question = document.getElementById('question');
-
-  const preview = document.getElementById('preview');
-
   verifyValues(
     [option1, option2, operator1, option3, operator2, option4, option5],
     questions[questionNumber]
   );
 }
+
+function updatePreview() {
+  const option1 = document.getElementById('first-part').value;
+  const option2 = document.getElementById('second-part').value;
+  const option3 = document.getElementById('third-part').value;
+  const option4 = document.getElementById('fourth-part').value;
+  const option5 = document.getElementById('fifth-part').value;
+
+  const operator1 = document.getElementById('first-operator').value;
+  const operator2 = document.getElementById('second-operator').value;
+
+  if (option5 !== '?') {
+    preview.innerHTML = `
+      <div class="fraction">
+        <div class="numerator">${option1} = ${option2} ${operator1} ${option3} ${operator2} ${option4}</div>
+        <div class="denominator">${option5}</div>
+      </div>
+    `;
+  } else {
+    preview.innerText = `${option1} = ${option2} ${operator1} ${option3} ${operator2} ${option4}`;
+  }
+}
+
+document.querySelectorAll('select').forEach((select) => {
+  select.addEventListener('change', updatePreview);
+});
