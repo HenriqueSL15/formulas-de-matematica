@@ -85,8 +85,8 @@ function verifyValues(array, typeOfQuestion) {
     questionNumber = getRandomInt(0, questions.length);
     question.innerText = questions[questionNumber].question;
     image.setAttribute('src', `${questions[questionNumber].img}`);
-    document.querySelector('.number-questions').innerText = points;
     points++;
+    document.querySelector('.number-questions').innerText = points;
     clearInputs();
     return true;
   } else {
@@ -103,6 +103,8 @@ function clearInputs() {
 
   document.getElementById('first-operator').value = '?';
   document.getElementById('second-operator').value = '?';
+
+  document.getElementById('preview').innerText = '? = ? ? ? ? ?';
 }
 
 function getRandomInt(min, max) {

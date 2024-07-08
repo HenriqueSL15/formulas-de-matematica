@@ -61,22 +61,30 @@ body {
   max-width: 600px;
 }
 
+#preview {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 25px;
+}
+
 .fraction {
   display: inline-block;
   text-align: center;
   vertical-align: end;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
 .fraction .numerator {
   border-bottom: 2px solid #000;
   padding-bottom: 5px;
-  font-size: 1.2em;
+  font-size: 25px;
 }
 
 .fraction .denominator {
   padding-top: 5px;
-  font-size: 1.2em;
   color: #ff0000;
+  font-size: 25px;
 }
