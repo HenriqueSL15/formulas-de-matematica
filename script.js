@@ -35,6 +35,7 @@ const questions = [
     type: 4,
     img: 'img/losango.png',
   },
+  //Fazer área do trapézio
   {
     question: 'Volume do Cubo',
     answer: ['V', 'a3', '?', '?', '?', '?', '?'],
